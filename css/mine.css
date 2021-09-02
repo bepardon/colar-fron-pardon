@@ -1,0 +1,143 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+body{
+    background-color: #f0f0f0;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    border-top: 1px solid #9999;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: center;
+    height: 9%;
+    background: white;
+}
+.footer li,.main li{
+    width: 25%;
+    text-align: center;
+    margin-top: 2vw;
+}
+.footer a {
+    text-decoration: none;
+    font-size: 2vw;
+    color: #959595;
+
+}
+.footer img,.main img{
+    display: block;
+    width: 6vw;
+    margin: auto;
+}
+
+
+.header{
+    color: white;
+    background-color: #fd424d;
+    /* font-size: 3vw; */
+    font-weight: bolder;
+    font-size: 4.4vw;
+    padding: 3vw;
+    padding-bottom: 15vw;
+
+}
+
+.header p:nth-of-type(1){
+    text-align: center;
+    padding-bottom: 6vw;
+}
+
+
+.header img{
+    /* width: 5vw; */
+    height: 10vw;
+    vertical-align: middle;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+
+.main{
+    margin-top: -10vw;
+}
+.main>div{
+    margin-bottom: 3vw;
+}
+ul{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    background: white;
+    margin: auto;
+    border-radius: 1vw;
+    padding: 4vw 0vw;
+}
+
+.main p{
+    font-size: 2.5vw;
+}
+.mid li{
+    width: 37%;
+}
+
+.last{
+    width: 91%;
+    background-color: white;
+
+    height: 13vw;
+    padding: 1vw 2vw;
+    margin: auto;
+    border-radius: 1vw;
+    
+}
+
+.last>p{
+    color: red;
+    float: left;
+    font-weight: bolder;
+    font-size: 4vw;
+}
+.last>span{
+    float: right;
+    font-size: 2.5vw;
+}
+.inner ul{
+    float: left;
+    width: 80%;
+    display: inline;
+    padding: 0px;
+    /* margin-right: 5vw; */
+}
+.inner li{
+    width: 25%;
+    float: left;
+    margin: 0px;
+}
+.inner img{
+    list-style: none;
+    display: inline;
+    width: 3vw;
+}
+.inner li span{
+    font-size: 2.5vw;
+}
+
+.last span:nth-of-type(2){
+    background-color: #fd424d;
+    color: white;
+    float: right;
+    font-size: 2.6vw;
+    border-radius: 3vw;
+    line-height: 4vw;
+    padding: 1vw;
+}

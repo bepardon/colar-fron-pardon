@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/detial.css">
+</head>
+<body>
+    <div class="header">
+        <img src="../images/kaola.webp" alt="">
+        <div class="head">
+            <h4>【考拉海购】官方自营 正品保障</h4>
+            <p>下载APP即可参与新人首单全额反卷活动</p>            
+        </div>
+        <h3>立即领取</h3>
+    </div>
+
+    <div class="img-box">
+        <div id="box">
+            <!-- ul实现图片布局 -->
+            <ul id="wrap">
+                <li>
+                    <img src="../images/d00.webp" alt="">
+                </li>
+                <li>
+                    <img src="../images/d0 (1).jpg" alt="">
+                </li>
+                <li>
+                    <img src="../images/d0 (1).webp" alt="">
+                </li>
+                <li>
+                    <img src="../images/d0 (2).webp" alt="">
+                </li>
+                <li>
+                    <img src="../images/d0 (3).webp" alt="">
+                </li>
+            </ul>
+            <!-- ol实现小圆点 -->
+            <ol id="list">
+                <li class="current"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </div>
+        <a href="../index.html"></a>
+    </div>
+    <div class="pri">
+        <span>￥249起</span>
+        <span>特价</span>
+        <span>报税</span>            
+        <a>
+            <img src="../images/love.png" alt=""> 
+            收藏
+        </a>
+    </div>
+    <div class="car">
+        <span>
+            <img src="../images/ca0.png" alt="">
+            开通黑卡下单预计省13元，可得300元红包
+            <img src="../images/ca1.png" alt="">
+        </span>
+        <span>立即开卡
+            <img src="../images/right.png" alt="">
+        </span>
+    </div>
+    <h4>【易烊千玺代言】阿玛尼臻致丝绒哑光红管唇釉 显白枫叶红 限定新色 #205#415#405</h4>
+    <p>【新旧版本随机发货，新版本管身无钢印，两个版本底部标签不同】阿玛尼重磅唇釉，美妆博主人手一支！质地丝绒哑光雾面，色彩浓郁，显色度很高，几乎每个颜色都很日常实用，滋润和持久度也是相当不错~ </p>
+    <div>
+        <!-- 品牌图标 -->
+    </div>
+    <p></p>
+    <p>详情介绍</p>
+    <img src="../images/de01.png" alt="">
+    <div></div>
+    <ul>
+        <li><img src="../images/de02.webp" alt=""></li>
+        <li><img src="../images/d00.jpg" alt=""></li>
+        <li><img src="../images/d01.jpg" alt=""></li>
+        <li><img src="../images/d02.jpg" alt=""></li>
+        <li><img src="../images/d03.jpg" alt=""></li>
+        <li><img src="../images/d04.jpg" alt=""></li>
+        <li><img src="../images/d06.jpg" alt=""></li>
+        <li><img src="../images/d07.jpg" alt=""></li>
+        <li><img src="../images/d08.jpg" alt=""></li>
+        <li><img src="../images/d09.jpg" alt=""></li>
+        <li><img src="../images/d10.jpg" alt=""></li>
+        <li><img src="../images/d11.jpg" alt=""></li>
+    </ul>
+
+    <img src="../images/d000.png" alt="">
+
+<!--  -->
+
+    <div class="footer">
+        <p>首页 &nbsp;&nbsp;|&nbsp;&nbsp;客户端&nbsp;&nbsp;|&nbsp;&nbsp;用户&nbsp;&nbsp;|&nbsp;&nbsp;退出</p>
+        <p>阿里巴巴版权所有@2003-2021</p>
+    </div>
+
+    <div class="nav">
+        <a href="">
+            <img src="../images/nn (2).png" alt="">
+            店铺入口
+        </a>
+        <a href="">
+            <img src="../images/nn (1).png" alt="">
+            客服
+        </a>
+        <a href="../html/shopcart.html">
+            <img src="../images/n (1).png" alt="">
+            购物车
+            <span class="add">4</span>
+        </a>
+        <a href="">
+            <p>加入购物车</p>
+        </a>
+        <a href="">
+            <p>立即购买</p>
+        </a>
+    </div>
+
+
+    <script>
+        var num=0;
+        var wrap=document.getElementById('wrap');
+        // a.children选择a的子级，得到的是一个数组。不能直接进行控制。只能选择到具体的某一个
+        var list=document.getElementById('list').children;
+        var timer;
+        function run(){
+            // 遍历排他
+            for(var i=0;i<list.length;i++){
+                list[i].removeAttribute('class');
+            }
+            // ul移动
+            wrap.style.transform='translateX('+-100*num+'vw)'
+            // 圆点变色
+            list[num].setAttribute('class','current');
+        }
+
+        function go(){
+            timer=setInterval(function(){
+                num++;
+                if(num>4){
+                    num=0;
+                }
+                run();
+                
+            },3000)
+        }
+        go();
+
+        // 鼠标移入停止定时器
+        box.onmouseenter=function(){
+            clearInterval(timer);
+        }
+        // 鼠标移出开始定时器
+        box.onmouseleave=function(){
+            go()
+        }
+        // 圆点绑定点击事件
+        for(var i=0;i<list.length;i++){
+            // 给标签自定义属性
+            list[i].index=i;
+            list[i].onclick=function(){
+                num=this.index
+                run()
+            }
+        }
+
+
+        // right.onclick=function(){
+        //     num++;
+        //     if(num>4){
+        //         num=0;
+        //     }
+        //     run();
+        // }
+        // left.onclick=function(){
+        //     num--;
+        //     if(num<0){
+        //         num=4;
+        //     }
+        //     run();
+        // }
+    </script>
+
+</body>
+</html>

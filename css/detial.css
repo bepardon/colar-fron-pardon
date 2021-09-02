@@ -1,0 +1,270 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+
+.header{
+    background: white;
+    width: 100%;
+    display: inline-block;
+    border-bottom: 1px solid #f0f0f0;
+}
+.header img{
+    float: left;
+    margin: 10px 8px;
+    width: 10%;
+    /* background-color: rgb(0, 0, 0，0.19); */
+    border: 1px solid #f3f3f3;
+    border-radius: 10px;
+}
+.head{
+    float: left;
+    font-size: 2vh;
+    width: 63%;
+    margin-top: 4%;
+
+}
+
+.head p {
+    color: #999999;
+}
+
+.header h3{
+    width: 22%;
+    /* height: 10vh; */
+    /* height: 101%; */
+    font-size: 4vw;
+    line-height: 10vh;
+    color: white;
+    background: red;
+    float: right;
+    text-align: center;
+}
+
+
+/* 图片 */
+#box{
+    width: 100%;
+    /* height: 280px; */
+    /* margin:20px auto; */
+    position: relative;
+    overflow: hidden;
+    /* height: 370px; */
+}
+.img-box ul{
+    width:9999vw;
+}
+.img-box li{
+    float: left;
+}
+.img-box img{
+    width: 100vw;
+}
+
+
+ol{
+    position: absolute;
+    bottom:20px;
+    left: 50%;
+    /* translate设置百分比，参照物是当前标签的宽度或者高度 */
+    transform:translateX(-50%);
+}
+ol li{
+    float: left;
+    width:5px;
+    height: 5px;
+    border-radius: 50%;
+    background:black;
+    border: 1px solid;
+    margin:0px 4px;
+    cursor: pointer;
+}
+
+ol .current{
+    background:white;
+}
+
+.img-box a {
+    position: absolute;
+    top: 9%;
+    width: 5%;
+    height: 6%;
+    background: url(../images/jlt.png) 180vw 3vw;
+    background-size: 60vw;
+}
+
+/* 价格 */
+.pri{
+    line-height: 9vw;
+}
+.pri span{
+    font-size: 3vw;
+    color: white;
+    background-color: #ff8587;
+    margin-left: 1vw;
+    padding: 0vw 1vw;
+    border-radius: 1vw;
+}
+.pri span:nth-of-type(1){
+    font-size: 5vw;
+    color: red;
+    background-color: white;
+    font-weight: bolder;
+}
+.pri a{
+    font-size: 3vw;
+    line-height: 6vw;
+    /* right: 1vw; */
+    float: right;
+    width: 10%;
+}
+.pri img {
+    width: 50%;
+    display: block;
+}
+
+
+.car {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 95%;
+    margin: 2vw auto;
+    background: #f7f7f7;
+}
+.car>span:nth-of-type(1){
+    display: flex;
+    justify-content: flex-start;
+    padding: 1vw 2vw;
+    font-size: 3vw;
+}
+.car img{
+    margin: 0vw 1vw;
+}
+.car img:nth-of-type(1){
+    width: 12%;
+}
+.car img:nth-of-type(2){
+    width: 6%;
+}
+.car span{
+    font-size: 3vw;
+}
+.car span:nth-of-type(2){
+    width: 10vw;
+    padding: 3%;
+    padding-right: 4%;
+    background: #f3eee3;
+    position: relative;
+}
+.car span:nth-of-type(2) img{
+    position: absolute;
+    width: 22%;
+    top: 36%;
+}
+body>h4{
+    font-size: 14px;
+    /* line-height: 18px; */
+    padding-top: 10px;
+    margin: 0 2vw 1vw;
+    color: #333;
+    /* font-weight: 700; */
+    border-top: 1px solid #f0f0f0;
+}
+body>p{
+    padding: 0 10px;
+    font-size: 13px;
+    color: #333;
+    line-height: 21px;
+}
+p:nth-of-type(2){
+    height: 10px;
+    background: #f1f1f1;
+}
+p:nth-of-type(3){
+    text-align: center;
+    background: url(../images/de00.jpg) no-repeat 0vw;
+    background-size: 100%;
+    line-height: 44px;
+}
+img{
+    width: 100%;
+}
+ul li{
+    margin: -4px;
+}
+
+/* 页脚 */
+.footer{
+    height: 19vh;
+    background: white;
+    color: #999999;
+    text-align: center;
+    font-size: 3vw;
+    margin: 4vh;
+}
+
+.footer p{
+    height: 7vw;
+}
+
+.nav {
+
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    border-top: 1px solid #9999;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: center;
+    height: 8%;
+    background: white;
+}
+
+.nav a {
+    text-align: center;
+    width: 15%;
+    font-size: 3vw;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    /* height: 11vw; */
+    margin-top: 3vw;
+
+}
+
+.nav img {
+    width: 35%;
+    display: block;
+    margin: auto;
+}
+
+.nav a:nth-of-type(4),.nav a:nth-of-type(5) {
+    width: 27%;
+    font-size: 3vw;
+    line-height: 14vw;
+    color: white;
+    margin: auto 0vw;
+}
+.nav a:nth-of-type(4){
+    background: #404040;
+}
+.nav a:nth-of-type(5){
+    background: #ff2448;
+}
+
+.add{
+    border: 1px solid red;
+    border-radius: 50%;
+    width: 4vw;
+    height: 4vw;
+    position: absolute;
+    top: -2vw;
+    left: 8vw;
+    color: red;
+    background: white;
+}

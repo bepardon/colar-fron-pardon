@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/shopcart.css">
+</head>
+<body>
+    <div class="header">
+        <p>购物车(4)</p>
+        <a href="../html/mine.html">
+            <img src="../images/mine00.webp" alt="">
+        </a>
+        <a href="../index.html">
+            <img src="../images/shop00.png" alt="">
+        </a>
+    </div>
+    <div class="main">
+        <div>
+            <div class="main-head">
+                <input type="checkbox" name="" id="" class="selection">
+                <img src="../images/shop03.png" alt="">
+                <p>RECL中古店 ></p>
+            </div>
+            <div class="main-cont">
+                <div class="cont-top">
+                    <span>满件折</span>
+                    <span>已购满一件，已享7.3折</span>
+                    <span>再逛逛 ></span>
+                </div>
+                <div class="cont-center">
+                    <input type="checkbox" name="" id="" class="selected">
+                    <div>
+                        <div class="detial">
+                            <img src="../images/shop04.webp" alt="">
+                            <div class="d-right">
+                                <a href="">
+                                    <p>中古奢品Gucci【B】9.0新Ophidia  双G SUPREME 迷你 肩包 PVC  米色 多彩色669391</p>
+                                </a>
+                                <div class="iner">
+                                    <div>
+                                        <span>尺码:迷你 颜色:米色 多彩色 </span>
+                                        <div>
+                                            <span>￥</span><span class="pri">5648</span>
+                                        </div>
+                                    </div>
+                                    <div class="a">
+                                        <div>
+                                            <span onclick="redu(this)">-</span>
+                                            <input type="number" value="1" class="count">
+                                            <span onclick="addn(this)">+</span>
+                                        </div>
+                                        <img src="../images/shop05.png" alt="">
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </div>
+                        <span>库存不足</span>
+                    </div>
+                </div>
+                <div class="cont-footer">
+                    <p>活动优惠：-￥00.0</p>
+                    <p>本仓总计（不含税）：￥ <span id="dprice"> </span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div>
+            <div class="main-head">
+                <input type="checkbox" name="" id="" class="selection">
+                <img src="../images/shop03.png" alt="">
+                <p>聚尚国际奢品海外专营店 ></p>
+            </div>
+            <div class="main-cont">
+                <!-- 商家 -->
+                <div class="cont-top">
+                    <span>额满减</span>
+                    <span>已购满300元，已减10元</span>
+                    <span>再逛逛 ></span>
+                </div>
+                <!-- 商品信息 -->
+                <div class="cont-center">
+                    <input type="checkbox" name="" id="" class="selected">
+                    <div>
+                        <div class="detial">
+                            <img src="../images/shop06.webp" alt="">
+                            <div class="d-right">
+                                <a href="">
+                                    <p>MOSCHINO 莫斯奇诺 新品女士画框泰迪熊短袖T恤</p>
+                                </a>
+                                <div class="iner">
+                                    <div>
+                                        <span>尺码:XS 颜色:白色2150911 </span>
+                                        <div>
+                                            <span>￥</span><span class="pri">1179</span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="a">
+                                        <div>
+                                            <span onclick="redu(this)">-</span>
+                                            <input type="number" value="1" class="count">
+                                            <span onclick="addn(this)">+</span>
+                                        </div>
+                                        <img src="../images/shop05.png" alt="">
+                                    </div>                                    
+                                </div>
+
+                            </div>
+                            
+                        </div>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="cont-center">
+                    <input type="checkbox" name="" id="" class="selected">
+                    <div>
+                        <div class="detial">
+                            <img src="../images/shop07.webp" alt="">
+                            <div class="d-right">
+                                <p>【活动款】【明星同款】MOSCHINO 莫斯奇诺 女士印花圆领别针熊 罗马熊 短袖T恤oversize版</p>
+                                <div class="iner">
+                                    <div>
+                                        <span>尺码:S 颜色:太空熊-白色D A0703 5440 1002 </span>
+                                        <div>
+                                            <span>￥</span><span class="pri">949</span>
+                                        </div>
+                                    </div>
+                                    <div class="a">
+                                        <div>
+                                            <span onclick="redu(this)">-</span>
+                                            <input type="number" value="1" class="count">
+                                            <span onclick="addn(this)">+</span>
+                                        </div>
+                                        <img src="../images/shop05.png" alt="">
+                                    </div>                                    
+                                </div>
+
+                            </div>
+                            
+                        </div>
+                        <!-- 库存信息 -->
+                        <span> 库存紧张</span>
+                    </div>
+                </div>
+
+                <!-- 商品总计 -->
+                <div class="cont-footer">
+                    <p>活动优惠：-￥00</p>
+                    <p>本仓总计（不含税）：￥<span id="dprice"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <!--  -->
+        <div>
+            <div class="main-head">
+                <input type="checkbox" name="" id="" class="selection"> 
+                <!-- <img src="../images/shop02.png" alt=""> -->
+                <img src="../images/shop03.png" alt="">
+                <p>NIHAO海外旗舰店 ></p>
+            </div>
+            <div class="main-cont">
+                <div class="cont-top">
+                    <!-- <span></span>
+                    <span></span>
+                    <span></span> -->
+                    <!-- js插入 -->
+                </div>
+
+                <div class="cont-center">
+                    <input type="checkbox" name="" id="" class="selected">
+                    <div>
+                        <div class="detial">
+                            <img src="../images/shop08.webp" alt="">
+                            <div class="d-right">
+                                <a href="../html/detial.html">
+                                    <p>只卖正品支持鉴定！MAC魅可子弹头口红chili小辣椒复古红尤雾弹MAC316 MAC314 MAC926 MAC930转运豆沙MAC923 </p>
+                                </a>
+                                <div class="iner">
+                                    <div>
+                                        <span>净含量:3g 颜色:602#chili小辣椒  </span>
+                                        <div>
+                                            <span>￥</span><span class="pri">105</span>                                            
+                                        </div>
+                                    </div>
+                                    <div class="a">
+                                        <div>
+                                            <span onclick="redu(this)">-</span>
+                                            <input type="number" value="1" class="count">
+                                            <span onclick="addn(this)">+</span>
+                                        </div>
+                                        <img src="../images/shop05.png" alt="">
+                                    </div>                                    
+                                </div>
+
+                            </div>
+                            
+                        </div>
+                        <span>单次限购2件</span>
+                    </div>
+                </div>
+
+                <div class="cont-footer">
+                    <p>活动优惠：-￥00.00</p>
+                    <p>本仓总计（不含税）：￥<span id="dprice"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div>
+            <!-- 结算 -->
+            <div><input type="checkbox" name="" id="all"> 全选</div>
+            <div class="mid">
+                <div><span>总价（不含税）￥</span><p id="fnpri"></p></div>
+                <div><span>商品税费￥00.0 </span><p>优惠￥00.0</p></div>
+            </div>
+            <div class="all">结算（<p id="alin"></p>）</div>
+        </div>
+        <!-- 页脚 -->
+        <ul>
+            <li>
+                <a href="../index.html">
+                    <img src="../images/n (4).png" alt="">
+                    首页
+                </a>
+            </li>
+            <li>
+                <a href="../html/classification.html">
+                    <img src="../images/n (2).png" alt="">
+                    分类
+                </a>
+            </li>
+            <li>
+                <a href="../html/shopcart.html">
+                    <img src="../images/n (1).png" alt="">
+                    购物车
+                </a>
+            </li>
+            <li>
+                <a href="../html/mine.html">
+                    <img src="../images/n (3).png" alt="">
+                    我的考拉
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</body>
+<script src="../js/shopcart.js"></script>
+
+</html>
